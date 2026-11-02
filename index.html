@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0810" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>深渊回响 · ABYSS ECHO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- 标题页 -->
+    <section id="screen-title" class="screen title-page active">
+      <div class="title-glow"></div>
+      <div class="title-block">
+        <div class="eyebrow">三消 × ROGUELIKE × 生物武器</div>
+        <div class="game-title">深渊回响</div>
+        <div class="game-en">ABYSS ECHO</div>
+        <div class="game-tag">在克苏鲁的凝视下，以消除之力击溃深渊主宰</div>
+      </div>
+      <div class="enter-btn" id="enter-btn"><span class="enter-text">进入深渊</span></div>
+      <div class="altar-btn" id="altar-btn"><span class="altar-text">亵渎祭坛</span><span class="altar-essence" id="altar-essence">◈ 80</span></div>
+      <div class="hint">按住宝石向任意方向滑动，三个相同即可消除<br />四连生成直线炸弹 · 拐角生成爆破弹</div>
+    </section>
+
+    <!-- 战斗页（由 game.js 渲染） -->
+    <section id="screen-battle" class="screen battle"></section>
+
+    <!-- 结算页（由 game.js 渲染） -->
+    <section id="screen-settle" class="screen settle"></section>
+
+    <!-- 商店页 · 亵渎祭坛（由 game.js 渲染） -->
+    <section id="screen-shop" class="screen shop"></section>
+
+  </div>
+
+  <script src="gems.js"></script>
+  <script src="shop.js"></script>
+  <script src="board.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
